@@ -1,0 +1,3 @@
+// Loading spinner
+export const SHOW_LOADING_SPINNER = 'SHOW_LOADING_SPINNER';
+export const HIDE_LOADING_SPINNER = 'HIDE_LOADING_SPINNER';
