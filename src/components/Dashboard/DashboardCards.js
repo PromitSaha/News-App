@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from 'react'
+import React, { useEffect, useState, useRef} from 'react'
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux'
 import { searchNews_Ajax } from '../../helpers/requests';
@@ -69,6 +69,8 @@ const DashboardCards = () => {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
+    const currentPageRef = useRef(null);
+
     useEffect(() => {
     }, [isFavouritesDrawerOpen]);
 
@@ -87,6 +89,7 @@ const DashboardCards = () => {
     }, [searchString, currentTab]);
 
     useEffect(() => {
+        currentPageRef.current = currentPage;
         if(currentPage > 0) {
             getNews(articles);
         }
@@ -153,7 +156,8 @@ const DashboardCards = () => {
         
         const bottom = node?.scrollHeight - node?.scrollTop === node?.clientHeight;
         if (bottom) {
-            setCurrentPage(currentPage + 1);
+            currentPageRef.current++;
+            setCurrentPage(currentPageRef.current);
         }
     }
 
