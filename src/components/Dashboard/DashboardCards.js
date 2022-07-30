@@ -258,8 +258,8 @@ const DashboardCards = () => {
                             articles.map((article, index) => {
                                 if(article.isFavourite) {
                                     return (
-                                        <Grid item sm={6} xs={12} md={3}>
-                                            <Card key={index} className="article-card">
+                                        <Grid key={index} item sm={6} xs={12} md={3}>
+                                            <Card className="article-card">
                                                 <CardHeader
                                                     className="article-card-header"
                                                     title={
@@ -324,8 +324,8 @@ const DashboardCards = () => {
                 {
                     articles.map((article, index) => {
                         return (
-                            <Grid item sm={6} xs={12} md={3}>
-                                <Card key={index} className="article-card">
+                            <Grid key={index} item sm={6} xs={12} md={3}>
+                                <Card className="article-card">
                                     <CardHeader
                                         className="article-card-header"
                                         title={
