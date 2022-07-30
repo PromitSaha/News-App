@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
 import { loadingSpinner } from './loadingSpinner';
+import { news } from "./news";
 
 const appReducer = combineReducers({
-    loadingSpinner
+    loadingSpinner,
+    news
 })
 
 export const rootReducer = (state, action) => {

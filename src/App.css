@@ -24,13 +24,6 @@
   color: white;
 }
 
-.loading-spinner {
-    position: absolute;
-    top: 40%;
-    left: 48%;
-    z-index: 1200;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -42,4 +35,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.loading-spinner {
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    z-index: 1200;
+}
+
+.article-card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: 400px;
+}
+
+.article-card-header {
+    height: 100px;
+}
+
+
+.MuiTabs-flexContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.article-list-box {
+    padding: 30px 50px 0px 50px
 }

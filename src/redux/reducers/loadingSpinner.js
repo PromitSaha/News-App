@@ -4,7 +4,7 @@ import {
 } from '../actions/typeConstants';
 
 var initialState = {
-    loadingSpinnerVisible: true
+    loadingSpinnerVisible: false
 }
 
 export const loadingSpinner = (state = initialState, action) => {
