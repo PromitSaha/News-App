@@ -53,7 +53,7 @@ const favouritesStyle = {
     p: 4,
 };
 
-const DashboardCards = () => {
+const DashboardCards = () => { 
     const dispatch = useDispatch();
 
     const searchString = useSelector(state => state?.news?.searchString);
